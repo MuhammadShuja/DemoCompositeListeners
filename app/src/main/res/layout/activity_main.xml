@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="bottom"
+    android:background="#F1F5F9"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="344dp"
+        android:orientation="horizontal"
+        android:background="#FFF"
+        android:padding="32dp">
+        <TextView
+            android:id="@+id/value_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_gravity="start|center_vertical"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subscriber A"
+                android:textSize="14sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registered events:"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:id="@+id/registered_events_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="0"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorAccent"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="start|bottom">
+            <Button
+                android:id="@+id/add_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Event"
+                android:textSize="10sp"
+                android:background="#F1F5F9"/>
+            <Button
+                android:id="@+id/remove_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Remove Event"
+                android:textSize="10sp"
+                android:background="#F1F5F9"/>
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#CCCCCC"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/value_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_gravity="end|center_vertical"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subscriber B"
+                android:textSize="14sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registered events:"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:id="@+id/registered_events_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="0"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorAccent"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="end|bottom">
+            <Button
+                android:id="@+id/add_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Event"
+                android:textSize="10sp"
+                android:background="#F1F5F9"/>
+            <Button
+                android:id="@+id/remove_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Remove Event"
+                android:textSize="10sp"
+                android:background="#F1F5F9"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/fire_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:background="#323232"
+        android:textColor="#FFF"
+        android:text="Fire event"/>
+
+    <Button
+        android:id="@+id/update_values"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#0066FF"
+        android:textColor="#FFF"
+        android:text="Update values"/>
+</LinearLayout>
